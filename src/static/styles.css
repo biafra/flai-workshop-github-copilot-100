@@ -133,6 +133,31 @@ section h3 {
   flex-shrink: 0;
 }
 
+.participant-email {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0 2px;
+  margin-left: auto;
+  opacity: 0.45;
+  flex-shrink: 0;
+  transition: opacity 0.15s, transform 0.15s;
+  line-height: 1;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
 .no-participants {
   font-size: 0.83rem;
   color: #9e9e9e;

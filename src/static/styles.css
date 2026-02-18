@@ -74,6 +74,97 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.participants-heading {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #5c6bc0;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.participants-count {
+  background-color: #e8eaf6;
+  color: #3949ab;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 1px 7px;
+  border-radius: 20px;
+  margin-left: 4px;
+}
+
+.participants-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.85rem;
+  color: #37474f;
+  background: linear-gradient(90deg, #e8eaf6 0%, #f3f4fd 100%);
+  border-left: 3px solid #7986cb;
+  border-radius: 0 8px 8px 0;
+  padding: 5px 10px;
+  transition: background 0.2s;
+}
+
+.participants-list li:hover {
+  background: linear-gradient(90deg, #c5cae9 0%, #e8eaf6 100%);
+}
+
+.participant-icon {
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.participant-email {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0 2px;
+  margin-left: auto;
+  opacity: 0.45;
+  flex-shrink: 0;
+  transition: opacity 0.15s, transform 0.15s;
+  line-height: 1;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.no-participants {
+  font-size: 0.83rem;
+  color: #9e9e9e;
+  font-style: italic;
+  padding: 4px 0;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
